@@ -1,0 +1,58 @@
+//program to find the second largest number (or middle) among three numbers.
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+class large{
+	public:
+		void number()
+		{
+			int a,b,c;
+			cout<<"Enter three numbers:"<<endl;
+			cin>>a>>b>>c;
+			
+		int Slargest = (a>b) ? ((a>c) ? ((b>c)? b : c) : a) : ((b>c)? ((a>c)? a : c) : b);	//using tennary operator
+		cout<<"The middle value among three numbers is = "<<Slargest<<endl;
+	/*	if(a>b)		//using if else ladder
+		{
+			if(a>c)
+			{
+				if(b>c)
+				{
+					cout<<b;
+				}
+				else{
+					cout<<c;
+				}
+			}
+			else{
+				cout<<a;
+			}
+			
+		}
+		else
+		{
+			if(b>c)
+			{
+				if(a>c)
+				{
+					cout<<a;
+				}
+				else{
+					cout<<c;
+				}
+			}
+			else
+			{
+				cout<<b;
+			}
+		}*/
+		
+		}
+};
+
+int main()
+{
+	large l;
+	l.number();
+}

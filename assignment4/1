@@ -1,0 +1,39 @@
+/*Write a program that creates an integer array of length 30,
+ fills the array with the sequence 1,-2,3,-4,…..29,-30 using a for loop. 
+Also print the above sequence using for loop*/
+#include<conio.h>
+#include<iostream>
+using namespace std;
+class A{
+	
+	public:
+		void check()
+		{
+			int arr[31];
+			for(int i=0 ; i<=30 ; i++)
+			{
+				if(i%2==0)
+				{
+					arr[i]=-i;
+				}
+				else
+				{
+					arr[i]=i;
+				}
+			}
+			
+			cout<<"The array elements are : "<<endl;
+			cout<<"{";
+			for( int i=1 ; i<=30 ; i++)
+			{
+				cout<<arr[i]<<",";
+			}
+			cout<<"}";
+		}
+};
+
+int main()
+{
+	A a;
+	a.check();
+}
